@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NEXUS — Beyond the Unknown | Tựa Game Hành Động Viễn Tưởng Đỉnh Cao</title>
+  
+  <!-- Meta SEO & OpenGraph -->
+  <meta name="description" content="NEXUS: Beyond the Unknown — Dự án Landing Page giới thiệu tựa game hành động khoa học viễn tưởng thế giới mở. Khám phá vũ trụ liên sao, giải mã cánh cổng không gian cổ đại.">
+  <meta name="keywords" content="NEXUS, game sci-fi, game hành động, cyberpunk, khoa học viễn tưởng, landing page, Vibe Coding">
+  <meta name="author" content="Phúc Hoàng - MSSV: 125000578">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Google Fonts: Orbitron (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- AOS (Animate On Scroll) CSS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,25 95,75 50,95 5,75 5,25' fill='%23070910' stroke='%2300E5FF' stroke-width='6'/><polygon points='50,22 80,38 80,62 50,78 20,62 20,38' fill='none' stroke='%238B5CF6' stroke-width='4'/><circle cx='50' cy='50' r='10' fill='%2300E5FF'/></svg>">
+</head>
+<body>
+
+  <!-- ==================== A. HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Logo NEXUS tùy biến -->
+      <a href="#hero" class="brand-logo" aria-label="NEXUS Trang chủ">
+        <svg class="brand-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="22,2 42,12 42,32 22,42 2,32 2,12" stroke="url(#logo-grad-1)" stroke-width="2.5" fill="rgba(0, 229, 255, 0.05)"/>
+          <polygon points="22,10 34,17 34,27 22,34 10,27 10,17" stroke="url(#logo-grad-2)" stroke-width="1.8" fill="rgba(139, 92, 246, 0.15)"/>
+          <circle cx="22" cy="22" r="4.5" fill="#00E5FF"/>
+          <defs>
+            <linearGradient id="logo-grad-1" x1="2" y1="2" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00E5FF"/>
+              <stop offset="1" stop-color="#8B5CF6"/>
+            </linearGradient>
+            <linearGradient id="logo-grad-2" x1="10" y1="10" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8B5CF6"/>
+              <stop offset="1" stop-color="#00E5FF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-text">NEXUS<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Trang chủ</a></li>
+          <li class="nav-item"><a href="#overview" class="nav-link">Tổng quan</a></li>
+          <li class="nav-item"><a href="#universe" class="nav-link">Thế giới</a></li>
+          <li class="nav-item"><a href="#characters" class="nav-link">Nhân vật</a></li>
+          <li class="nav-item"><a href="#gameplay" class="nav-link">Gameplay</a></li>
+          <li class="nav-item"><a href="#media" class="nav-link">Media</a></li>
+        </ul>
+        <div class="mobile-nav-cta">
+          <button type="button" class="btn btn-primary btn-block open-demo-btn" aria-haspopup="dialog">
+            <span class="btn-glow"></span>
+            <span class="btn-text">TRẢI NGHIỆM NGAY</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Action Button Group -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm open-demo-btn" id="header-cta" aria-haspopup="dialog">
+          <span class="btn-glow"></span>
+          <span class="btn-text">TRẢI NGHIỆM NGAY</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Mở danh mục điều hướng" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==================== B. HERO SECTION ==================== -->
+    <section class="hero-section" id="hero" aria-label="Màn hình mở đầu NEXUS">
+      <!-- Background Overlay & Sci-Fi HUD Canvas -->
+      <div class="hero-bg-media">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1920&q=80" 
+             alt="Cảnh quan không gian vũ trụ và cánh cổng không-thời gian NEXUS" 
+             class="hero-bg-img"
+             width="1920" 
+             height="1080"
+             fetchpriority="high">
+        <div class="hero-overlay"></div>
+        <div class="hero-grid-pattern" aria-hidden="true"></div>
+      </div>
+
+      <!-- Sci-fi Corner HUD Accents -->
+      <div class="hud-corner hud-top-left" aria-hidden="true">SYS.ONLINE // SECTOR_07</div>
+      <div class="hud-corner hud-top-right" aria-hidden="true">PORTAL_FREQ: 432.89 THz</div>
+
+      <div class="container hero-content">
+        <!-- Sub-tagline with Animate.css -->
+        <div class="hero-badge animate__animated animate__fadeInDown">
+          <span class="badge-dot"></span>
+          <span class="badge-text">GATEWAY INITIALIZED &bull; DỰ ÁN GIẢ TƯỞNG THIẾT KẾ WEB</span>
+        </div>
+
+        <!-- Main Heading H1 -->
+        <h1 class="hero-title animate__animated animate__fadeInUp animate__delay-1s">
+          NEXUS
+          <span class="hero-tagline">BEYOND THE UNKNOWN</span>
+        </h1>
+
+        <!-- Short Vietnamese Story Teaser -->
+        <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
+          Khi cánh cổng không gian cổ đại thức tỉnh giữa tâm dải ngân hà, ranh giới giữa các thực tại sụp đổ. 
+          Vào vai chiến binh tiên phong, dấn thân vào những hành tinh bí ẩn, làm chủ công nghệ lượng tử tối thượng 
+          và giải mã bí mật cứu rỗi nhân loại trước khi vũ trụ chìm vào hư vô.
+        </p>
+
+        <!-- CTAs: Khám phá thế giới & Xem Trailer -->
+        <div class="hero-cta-group animate__animated animate__fadeInUp animate__delay-2s">
+          <a href="#universe" class="btn btn-primary btn-lg">
+            <span class="btn-glow"></span>
+            <span class="btn-text">KHÁM PHÁ THẾ GIỚI</span>
+            <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+
+          <button type="button" class="btn btn-secondary btn-lg open-trailer-btn" id="hero-trailer-btn" aria-haspopup="dialog">
+            <span class="play-icon-wrap" aria-hidden="true">
+              <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="6,3 20,12 6,21"/>
+              </svg>
+            </span>
+            <span class="btn-text">XEM TRAILER</span>
+          </button>
+        </div>
+
+        <!-- Metadata Badges Strip -->
+        <div class="hero-meta-strip animate__animated animate__fadeIn animate__delay-2s">
+          <div class="meta-item">
+            <span class="meta-label">Thể loại</span>
+            <span class="meta-val">Action Adventure / Sci-Fi</span>
+          </div>
+          <div class="meta-separator" aria-hidden="true"></div>
+          <div class="meta-item">
+            <span class="meta-label">Chế độ chơi</span>
+            <span class="meta-val">Single Player (Chiến dịch cốt truyện)</span>
+          </div>
+          <div class="meta-separator" aria-hidden="true"></div>
+          <div class="meta-item">
+            <span class="meta-label">Nền tảng</span>
+            <span class="meta-val">PC (Steam / Windows)</span>
+          </div>
+          <div class="meta-separator" aria-hidden="true"></div>
+          <div class="meta-item">
+            <span class="meta-label">Giai đoạn</span>
+            <span class="meta-val text-cyan">Closed Alpha Access</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#overview" class="scroll-down-indicator" aria-label="Cuộn xuống phần Tổng quan">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">CUỘN ĐỂ KHÁM PHÁ</span>
+      </a>
+    </section>
+
+    <!-- ==================== C. GAME OVERVIEW ==================== -->
+    <section class="overview-section" id="overview" aria-labelledby="overview-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag">THÔNG TIN TỔNG QUAN</span>
+          <h2 class="section-title" id="overview-heading">HÀNH TRÌNH VƯỢT NGOÀI GIỚI HẠN THỰC TẠI</h2>
+          <div class="title-underline" aria-hidden="true"></div>
+        </div>
+
+        <div class="overview-grid">
+          <!-- Left Column: Story narrative & Specs -->
+          <div class="overview-text-col" data-aos="fade-right">
+            <div class="academic-disclaimer-card">
+              <div class="disclaimer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="16" x2="12" y2="12"/>
+                  <line x1="12" y1="8" x2="12.01" y2="8"/>
+                </svg>
+              </div>
+              <div class="disclaimer-content">
+                <strong>Ghi chú đồ án học thuật:</strong> Đây là dự án giả tưởng phục vụ môn học Thiết kế Web & Vibe Coding. Mọi cốt truyện, nhân vật và tổ chức đều là tác phẩm hư cấu sáng tạo.
+              </div>
+            </div>
+
+            <h3 class="overview-story-title">Bí ẩn cổ xưa thức giấc trong khoảng không</h3>
+            <p class="overview-paragraph">
+              Năm 2380, trạm nghiên cứu viễn thông sâu AVALON vô tình kích hoạt một cổ vật lạ lẫm trôi dạt tại rìa vành đai Kuiper. Một khe nứt chiều không gian mang tên <strong>NEXUS</strong> bùng nổ, mở ra mạng lưới liên kết tới những hành tinh cổ đại nằm ngoài hiểu biết của thiên văn học đương đại.
+            </p>
+            <p class="overview-paragraph">
+              Trong vai một <em>Pathfinder (Chiến binh Dẫn đường)</em>, bạn được trang bị bộ giáp lượng tử Exo-Core thế hệ mới. Nhiệm vụ của bạn là bước qua cánh cổng, băng qua những thành phố tương lai đầy rẫy hiểm nguy, đối đầu với thực thể cơ khí bóng tối và giải mã bí ẩn về nền văn minh tiền thân đã kiến tạo nên vũ trụ.
+            </p>
+
+            <!-- Technical Game Specs List -->
+            <ul class="specs-list" aria-label="Thông số kỹ thuật của trò chơi">
+              <li class="spec-entry">
+                <span class="spec-name">Thể loại:</span>
+                <span class="spec-value">Action Adventure / Sci-Fi RPG</span>
+              </li>
+              <li class="spec-entry">
+                <span class="spec-name">Chế độ:</span>
+                <span class="spec-value">Single Player (Cốt truyện phân nhánh)</span>
+              </li>
+              <li class="spec-entry">
+                <span class="spec-name">Thế giới:</span>
+                <span class="spec-value">Interstellar Multi-World Universe</span>
+              </li>
+              <li class="spec-entry">
+                <span class="spec-name">Nền tảng hỗ trợ:</span>
+                <span class="spec-value">PC (Tối ưu DirectX 12 & Ray Tracing)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Visual Hologram & Metrics -->
+          <div class="overview-metrics-col" data-aos="fade-left">
+            <div class="metrics-visual-wrap">
+              <div class="metrics-card-grid">
+                <article class="metric-card">
+                  <div class="metric-num">100<span class="unit">+</span></div>
+                  <h4 class="metric-label">Giờ Chơi Khám Phá</h4>
+                  <p class="metric-sub">Hàng trăm nhiệm vụ thứ cấp và bí ẩn liên sao cần giải mã.</p>
+                </article>
+
+                <article class="metric-card">
+                  <div class="metric-num">03</div>
+                  <h4 class="metric-label">Hành Tinh Kỳ Vĩ</h4>
+                  <p class="metric-sub">Môi trường mở độc bản với hệ sinh thái và quy luật vật lý riêng.</p>
+                </article>
+
+                <article class="metric-card">
+                  <div class="metric-num">60<span class="unit">FPS</span></div>
+                  <h4 class="metric-label">Chiến Đấu Tốc Độ Cao</h4>
+                  <p class="metric-sub">Cơ chế combo vũ khí năng lượng mượt mà, phản xạ tức thì.</p>
+                </article>
+
+                <article class="metric-card">
+                  <div class="metric-num">UE5</div>
+                  <h4 class="metric-label">Đồ Họa Thế Hệ Mới</h4>
+                  <p class="metric-sub">Ánh sáng điện ảnh Lumens và hình học Nanite siêu chân thực.</p>
+                </article>
+              </div>
+
+              <!-- Terminal Status Badge -->
+              <div class="terminal-bar" aria-hidden="true">
+                <span class="status-indicator"></span>
+                <span>STATUS: QUANTUM SIMULATION ACTIVE &bull; LATENCY 1.2ms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== D. EXPLORE THE UNIVERSE ==================== -->
+    <section class="universe-section" id="universe" aria-labelledby="universe-heading">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag">BẢN ĐỒ KHÔNG GIAN</span>
+          <h2 class="section-title" id="universe-heading">KHÁM PHÁ VŨ TRỤ NEXUS</h2>
+          <div class="title-underline" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Ba vùng lãnh địa độc nhất kết nối qua mạng lưới cổng lượng tử, mỗi nơi chứa đựng hiểm họa và nguồn năng lượng riêng biệt.
+          </p>
+        </div>
+
+        <!-- 3-Column Responsive Grid -->
+        <div class="universe-grid">
+          <!-- Card 1: Neon City -->
+          <article class="universe-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-media-wrapper">
+              <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80" 
+                   alt="Thành phố tương lai Neon City ngập tràn ánh sáng laser" 
+                   class="universe-img" 
+                   width="800" 
+                   height="500" 
+                   loading="lazy">
+              <div class="card-tag">SECTOR 01 &bull; METROPOLIS</div>
+            </div>
+            <div class="universe-card-body">
+              <h3 class="universe-card-title">Neon City</h3>
+              <p class="universe-card-desc">
+                Đại đô thị cyberpunk vươn cao ngút ngàn mây khói, nơi các tập đoàn công nghệ kiểm soát nguồn sống cư dân bằng thuật toán lượng tử và những vũ khí áp chế ngầm.
+              </p>
+              <div class="card-footer-info">
+                <span class="coord-label">Tọa độ: <span class="coord-code">NC-884.09</span></span>
+                <span class="hazard-badge safe">Hiểm họa: Trung bình</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Void Planet -->
+          <article class="universe-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-media-wrapper">
+              <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=800&q=80" 
+                   alt="Hành tinh Void Planet cằn cỗi chìm trong khoảng không hư vô" 
+                   class="universe-img" 
+                   width="800" 
+                   height="500" 
+                   loading="lazy">
+              <div class="card-tag">SECTOR 02 &bull; DEEP VOID</div>
+            </div>
+            <div class="universe-card-body">
+              <h3 class="universe-card-title">Void Planet</h3>
+              <p class="universe-card-desc">
+                Hành tinh cằn cỗi trôi dạt trong khoảng không vô tận. Từ trường dị thường nơi đây làm lệch hướng sóng radar và che giấu xác tàu chiến khổng lồ của một cuộc chiến tiền sử.
+              </p>
+              <div class="card-footer-info">
+                <span class="coord-label">Tọa độ: <span class="coord-code">VP-003.88</span></span>
+                <span class="hazard-badge danger">Hiểm họa: Cực độ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Ancient Gate -->
+          <article class="universe-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-media-wrapper">
+              <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=800&q=80" 
+                   alt="Cánh cổng không gian cổ đại Ancient Gate kết nối các chiều không gian" 
+                   class="universe-img" 
+                   width="800" 
+                   height="500" 
+                   loading="lazy">
+              <div class="card-tag">SECTOR 00 &bull; PRIMORDIAL</div>
+            </div>
+            <div class="universe-card-body">
+              <h3 class="universe-card-title">Ancient Gate</h3>
+              <p class="universe-card-desc">
+                Cấu trúc vòng xoay kim loại kỳ bí có niên đại hàng triệu năm trước nền văn minh loài người. Chiếc chìa khóa vạn năng có khả năng bẻ cong các chiều không-thời gian.
+              </p>
+              <div class="card-footer-info">
+                <span class="coord-label">Tọa độ: <span class="coord-code">AG-NULL.00</span></span>
+                <span class="hazard-badge warning">Hiểm họa: Dị thường</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== E. CHARACTERS ==================== -->
+    <section class="characters-section" id="characters" aria-labelledby="characters-heading">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag">HỒ SƠ CHIẾN BINH</span>
+          <h2 class="section-title" id="characters-heading">NHÂN VẬT HUYỀN THOẠI</h2>
+          <div class="title-underline" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Những cá nhân kiệt xuất nắm giữ vận mệnh của hành trình du hành liên sao NEXUS.
+          </p>
+        </div>
+
+        <!-- 3 Characters Grid -->
+        <div class="characters-grid">
+          <!-- Character 1: Aether -->
+          <article class="character-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="char-portrait-box">
+              <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80" 
+                   alt="Chân dung chiến binh tiên phong Aether với bộ giáp lượng tử" 
+                   class="char-portrait-img" 
+                   width="800" 
+                   height="900" 
+                   loading="lazy">
+              <div class="char-role-badge">VANGUARD / TIÊN PHONG</div>
+            </div>
+            <div class="char-details">
+              <h3 class="char-name">Aether</h3>
+              <span class="char-title-sub">Chiến Binh Dẫn Đường</span>
+              <p class="char-bio">
+                Cựu chỉ huy lực lượng Trinh sát Liên sao. Aether sở hữu phản xạ siêu nhân nhờ cấy ghép sợi nơ-ron bán dẫn và sử dụng thành thạo thanh Đoản kiếm Phân tử Ion.
+              </p>
+              <!-- Skill Bars -->
+              <div class="char-stats">
+                <div class="stat-row">
+                  <span class="stat-name">Sức mạnh cận chiến</span>
+                  <div class="stat-bar"><div class="stat-fill" style="width: 95%;"></div></div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-name">Phòng thủ Exo-Core</span>
+                  <div class="stat-bar"><div class="stat-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-name">Tốc độ cơ động</span>
+                  <div class="stat-bar"><div class="stat-fill" style="width: 82%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Character 2: Nyra -->
+          <article class="character-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="char-portrait-box">
+              <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80" 
+                   alt="Chân dung chuyên gia công nghệ Nyra điều khiển thiết bị holographic" 
+                   class="char-portrait-img" 
+                   width="800" 
+                   height="900" 
+                   loading="lazy">
+              <div class="char-role-badge">TECH SPECIALIST / CÔNG NGHỆ</div>
+            </div>
+            <div class="char-details">
+              <h3 class="char-name">Nyra</h3>
+              <span class="char-title-sub">Chuyên Gia Công Nghệ</span>
+              <p class="char-bio">
+                Thiên tài tin học không gian và kỹ sư lượng tử độc lập. Nyra có khả năng thâm nhập các cổ máy tiền sử, viết lại mã nguồn trọng lực và điều khiển máy bay không người lái hỗ trợ chiến đấu.
+              </p>
+              <!-- Skill Bars -->
+              <div class="char-stats">
+                <div class="stat-row">
+                  <span class="stat-name">Bẻ khóa lượng tử</span>
+                  <div class="stat-bar"><div class="stat-fill stat-purple" style="width: 98%;"></div></div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-name">Công nghệ hỗ trợ</span>
+                  <div class="stat-bar"><div class="stat-fill stat-purple" style="width: 92%;"></div></div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-name">Tác chiến tầm xa</span>
+                  <div class="stat-bar"><div class="stat-fill stat-purple" style="width: 85%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Character 3: Vex -->
+          <article class="character-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="char-portrait-box">
+              <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" 
+                   alt="Chân dung chiến binh bóng tối Vex chìm trong năng lượng hư không" 
+                   class="char-portrait-img" 
+                   width="800" 
+                   height="900" 
+                   loading="lazy">
+              <div class="char-role-badge">SHADOW RIVAL / ĐỐI THỦ</div>
+            </div>
+            <div class="char-details">
+              <h3 class="char-name">Vex</h3>
+              <span class="char-title-sub">Đối Thủ Bí Ẩn</span>
+              <p class="char-bio">
+                Thực thể cô độc sinh ra từ vết rách hư vô của cánh cổng Ancient Gate. Vex thao túng năng lượng bóng tối, có thể dịch chuyển tức thời và sở hữu mục tiêu bí hiểm đe dọa toàn dải ngân hà.
+              </p>
+              <!-- Skill Bars -->
+              <div class="char-stats">
+                <div class="stat-row">
+                  <span class="stat-name">Thao túng không gian</span>
+                  <div class="stat-bar"><div class="stat-fill stat-alert" style="width: 96%;"></div></div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-name">Sát thương bùng nổ</span>
+                  <div class="stat-bar"><div class="stat-fill stat-alert" style="width: 94%;"></div></div>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-name">Ẩn thân tàng hình</span>
+                  <div class="stat-bar"><div class="stat-fill stat-alert" style="width: 88%;"></div></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== F. GAMEPLAY FEATURES ==================== -->
+    <section class="gameplay-section" id="gameplay" aria-labelledby="gameplay-heading">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag">CƠ CHẾ TRÒ CHƠI</span>
+          <h2 class="section-title" id="gameplay-heading">TÍNH NĂNG ĐỘT PHÁ AAA</h2>
+          <div class="title-underline" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Hệ thống cơ chế chiến đấu thế hệ mới kết hợp chiều sâu nhập vai hành động khoa học viễn tưởng.
+          </p>
+        </div>
+
+        <!-- 4 Features Grid -->
+        <div class="features-grid">
+          <!-- Feature 1: Combat System -->
+          <article class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Combat System</h3>
+            <span class="feature-tagline">Chiến Đấu Tốc Độ Cao</span>
+            <p class="feature-desc">
+              Hệ thống combo thời gian thực nhịp độ nhanh. Kết hợp kiếm phân tử, súng trường plasma và năng lực lượng tử để tạo chuỗi đòn sát thương hủy diệt trên từng khung hình.
+            </p>
+          </article>
+
+          <!-- Feature 2: Open Exploration -->
+          <article class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Open Exploration</h3>
+            <span class="feature-tagline">Khám Phá Vùng Đất Bí Ẩn</span>
+            <p class="feature-desc">
+              Tự do du hành qua các tiểu hành tinh, lăng mộ cổ đại và phòng thí nghiệm bỏ hoang. Sử dụng móc kéo phản trọng lực để chinh phục địa hình phức tạp đa chiều.
+            </p>
+          </article>
+
+          <!-- Feature 3: Advanced Technology -->
+          <article class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Advanced Technology</h3>
+            <span class="feature-tagline">Vũ Khí & Công Nghệ Tương Lai</span>
+            <p class="feature-desc">
+              Hơn 50 mô-đun nâng cấp cho bộ giáp Exo-Core. Chế tạo vũ khí lai ghép giữa công nghệ loài người và tàn tích cổ đại để kích hoạt các hiệu ứng nguyên tố cực mạnh.
+            </p>
+          </article>
+
+          <!-- Feature 4: Epic Storyline -->
+          <article class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="feature-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Epic Storyline</h3>
+            <span class="feature-tagline">Cốt Truyện Phân Nhánh Sâu Sắc</span>
+            <p class="feature-desc">
+              Mọi quyết định ngoại giao hay chiến tranh của bạn sẽ định hình trật tự giữa các chủng tộc liên sao, dẫn tới hơn 6 cái kết độc lập đầy bất ngờ và triết lý.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== G. TRAILER / MEDIA GALLERY ==================== -->
+    <section class="media-section" id="media" aria-labelledby="media-heading">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-tag">CINEMATIC & HÌNH ẢNH</span>
+          <h2 class="section-title" id="media-heading">TRAILER & MEDIA GALLERY</h2>
+          <div class="title-underline" aria-hidden="true"></div>
+          <p class="section-subtitle">
+            Chiêm ngưỡng những hình ảnh chân thực và trải nghiệm trailer điện ảnh của dự án NEXUS.
+          </p>
+        </div>
+
+        <!-- Featured Trailer Card with Interactive Trigger -->
+        <div class="featured-trailer-box" data-aos="zoom-in">
+          <div class="trailer-poster-wrapper">
+            <img src="https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Poster chính thức của Trailer game NEXUS" 
+                 class="trailer-poster-img"
+                 width="1200"
+                 height="514"
+                 loading="lazy">
+            <div class="trailer-poster-overlay"></div>
+            
+            <!-- Floating Glowing Play Button -->
+            <button type="button" class="trailer-play-btn open-trailer-btn" aria-label="Xem video trailer chính thức của NEXUS">
+              <span class="pulse-ring" aria-hidden="true"></span>
+              <svg class="play-svg-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <polygon points="6,3 20,12 6,21"/>
+              </svg>
+            </button>
+
+            <div class="trailer-caption-bar">
+              <div class="trailer-caption-title">NEXUS — OFFICIAL CINEMATIC REVEAL TRAILER [4K]</div>
+              <div class="trailer-caption-meta">Thời lượng: 02:15 &bull; Âm thanh vòm Dolby Atmos &bull; Minh họa đồ án</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshots Gallery Grid (4 items) -->
+        <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" 
+                 alt="Chiến trường đấu trường ánh sáng năng lượng cao trong NEXUS" 
+                 class="gallery-img" 
+                 width="800"
+                 height="500"
+                 loading="lazy">
+            <figcaption class="gallery-overlay">
+              <span class="gallery-tag">SCREENSHOT 01</span>
+              <span class="gallery-title">Đấu trường Năng Lượng Tử</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" 
+                 alt="Du hành liên sao qua khe nứt không gian NEXUS" 
+                 class="gallery-img" 
+                 width="800"
+                 height="500"
+                 loading="lazy">
+            <figcaption class="gallery-overlay">
+              <span class="gallery-tag">SCREENSHOT 02</span>
+              <span class="gallery-title">Hành Trình Bẻ Cong Ánh Sáng</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" 
+                 alt="Khám phá tàn tích ngoài hành tinh bí ẩn" 
+                 class="gallery-img" 
+                 width="800"
+                 height="500"
+                 loading="lazy">
+            <figcaption class="gallery-overlay">
+              <span class="gallery-tag">SCREENSHOT 03</span>
+              <span class="gallery-title">Khai Phá Vành Đai Tàn Tích</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" 
+                 alt="Xưởng nâng cấp bộ giáp chiến đấu Exo-Core" 
+                 class="gallery-img" 
+                 width="800"
+                 height="500"
+                 loading="lazy">
+            <figcaption class="gallery-overlay">
+              <span class="gallery-tag">SCREENSHOT 04</span>
+              <span class="gallery-title">Kho Vũ Khí Lượng Tử Exo-Core</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== H. FINAL CTA ==================== -->
+    <section class="final-cta-section" id="cta" aria-labelledby="cta-heading">
+      <div class="cta-background-wrap" aria-hidden="true">
+        <div class="cta-glow-circle circle-1"></div>
+        <div class="cta-glow-circle circle-2"></div>
+      </div>
+
+      <div class="container text-center cta-content-box" data-aos="zoom-in">
+        <span class="section-tag">SẴN SÀNG KHỞI HÀNH</span>
+        <h2 class="cta-title" id="cta-heading">YOUR JOURNEY STARTS NOW</h2>
+        <div class="title-underline center-underline" aria-hidden="true"></div>
+        <p class="cta-description">
+          Cánh cổng NEXUS đã kích hoạt và tọa độ các hành tinh bí ẩn đã được đồng bộ. 
+          Hãy là những chiến binh đầu tiên bước qua khe nứt không gian để kiến tạo huyền thoại mới.
+        </p>
+
+        <div class="cta-action-wrap">
+          <button type="button" class="btn btn-primary btn-xl open-demo-btn" id="final-cta-btn" aria-haspopup="dialog">
+            <span class="btn-glow"></span>
+            <span class="btn-text">BẮT ĐẦU HÀNH TRÌNH</span>
+            <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="cta-disclaimer-note">
+          <span class="dot-green"></span>
+          <span>Bản thử nghiệm Closed Alpha Simulation &bull; Hoàn toàn miễn phí phục vụ học thuật &bull; Đề tài Vibe Coding</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== I. FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo" aria-label="Quay lại đầu trang NEXUS">
+            <svg class="brand-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon points="22,2 42,12 42,32 22,42 2,32 2,12" stroke="url(#f-grad-1)" stroke-width="2.5" fill="rgba(0, 229, 255, 0.05)"/>
+              <polygon points="22,10 34,17 34,27 22,34 10,27 10,17" stroke="url(#f-grad-2)" stroke-width="1.8" fill="rgba(139, 92, 246, 0.15)"/>
+              <circle cx="22" cy="22" r="4.5" fill="#00E5FF"/>
+              <defs>
+                <linearGradient id="f-grad-1" x1="2" y1="2" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00E5FF"/>
+                  <stop offset="1" stop-color="#8B5CF6"/>
+                </linearGradient>
+                <linearGradient id="f-grad-2" x1="10" y1="10" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#8B5CF6"/>
+                  <stop offset="1" stop-color="#00E5FF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="brand-text">NEXUS<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-desc">
+            Trang giới thiệu game hành động khoa học viễn tưởng giả tưởng, thực hiện theo phương pháp Vibe Coding hiện đại.
+          </p>
+          <div class="student-info-badge">
+            <span class="badge-title">Sinh viên thực hiện:</span>
+            <span class="badge-author">Phúc Hoàng — MSSV: 125000578</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Điều hướng</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link">Trang chủ</a></li>
+            <li><a href="#overview" class="footer-link">Tổng quan Game</a></li>
+            <li><a href="#universe" class="footer-link">Thế giới viễn tưởng</a></li>
+            <li><a href="#characters" class="footer-link">Hồ sơ nhân vật</a></li>
+            <li><a href="#gameplay" class="footer-link">Tính năng Gameplay</a></li>
+            <li><a href="#media" class="footer-link">Trailer & Media</a></li>
+          </ul>
+        </div>
+
+        <!-- Academic Info & Policies -->
+        <div class="footer-academic-col">
+          <h4 class="footer-col-title">Thông tin môn học</h4>
+          <ul class="footer-links-list">
+            <li><span class="footer-text-muted">Môn: Thiết kế Web & Vibe Coding</span></li>
+            <li><span class="footer-text-muted">Công nghệ: HTML5, CSS3 Variables, JS thuần</span></li>
+            <li><span class="footer-text-muted">Thư viện: Animate.css, AOS</span></li>
+            <li><span class="footer-text-muted">Nền tảng triển khai: GitHub Pages</span></li>
+            <li><span class="footer-text-muted">Trạng thái: Hoàn thành nghiệm thu</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; 2026 NEXUS Project. Đồ án mẫu môn Thiết kế Web & Vibe Coding. Mọi hình ảnh và tư liệu thuộc quyền sở hữu của các tác giả tương ứng phục vụ mục đích nghiên cứu học tập phi thương mại.
+        </p>
+
+        <!-- Back to top button -->
+        <button type="button" class="back-to-top" id="back-to-top" aria-label="Quay lại đầu trang web">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5 12 12 5 19 12"/>
+          </svg>
+          <span class="back-top-label">LÊN ĐẦU TRANG</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL 1: TRAILER VIDEO DIALOG ==================== -->
+  <div class="modal-backdrop" id="trailer-modal" role="dialog" aria-modal="true" aria-labelledby="trailer-modal-title" hidden>
+    <div class="modal-container modal-video-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="trailer-modal-title">NEXUS — Official Cinematic Trailer</h3>
+        <button type="button" class="modal-close-btn" id="close-trailer-btn" aria-label="Đóng cửa sổ trailer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body video-wrapper">
+        <iframe id="trailer-iframe" 
+                src="" 
+                title="NEXUS Cinematic Game Trailer" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe>
+      </div>
+      <div class="modal-footer-caption">
+        <span>Nhấn phím <kbd>ESC</kbd> hoặc bấm ra ngoài để đóng video.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL 2: INTERACTIVE ALPHA ACCESS PASS DIALOG ==================== -->
+  <div class="modal-backdrop" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title" hidden>
+    <div class="modal-container modal-form-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="demo-modal-title">NHẬN VÉ TRẢI NGHIỆM CLOSED ALPHA</h3>
+        <button type="button" class="modal-close-btn" id="close-demo-btn" aria-label="Đóng cửa sổ đăng ký">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alpha-modal-intro">
+          <p>
+            Chào mừng bạn đến với chương trình thử nghiệm hệ thống mô phỏng NEXUS. Vui lòng nhập thông tin để hệ thống tạo mã thẻ truy cập lượng tử cá nhân.
+          </p>
+        </div>
+
+        <form id="alpha-access-form" class="alpha-form" novalidate>
+          <div class="form-group">
+            <label for="pilot-codename" class="form-label">Mật danh Chiến binh (Codename):</label>
+            <input type="text" id="pilot-codename" name="codename" class="form-control" placeholder="Ví dụ: Vanguard_Nova" required autocomplete="off">
+            <span class="form-error" id="codename-error">Vui lòng nhập mật danh hợp lệ (từ 3 ký tự trở lên).</span>
+          </div>
+
+          <div class="form-group">
+            <label for="pilot-email" class="form-label">Địa chỉ Tần số Liên lạc (Email):</label>
+            <input type="email" id="pilot-email" name="email" class="form-control" placeholder="ten_ban@domain.com" required autocomplete="email">
+            <span class="form-error" id="email-error">Vui lòng nhập định dạng email chính xác.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="pilot-platform" class="form-label">Hệ thống Thiết bị (Nền tảng):</label>
+            <select id="pilot-platform" name="platform" class="form-control">
+              <option value="PC-Steam">PC — Nền tảng Steam</option>
+              <option value="PC-Epic">PC — Nền tảng Epic Games</option>
+              <option value="PC-Direct">PC — Bản Cài Đặt Trực Tiếp (Stand-alone)</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-block" id="claim-ticket-btn">
+              <span class="btn-glow"></span>
+              <span class="btn-text">KÍCH HOẠT VÉ ALPHA PASS</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Simulated Holographic Ticket Result -->
+        <div class="alpha-result-card" id="alpha-result-card" hidden>
+          <div class="ticket-header">
+            <span class="ticket-status-badge">KÍCH HOẠT THÀNH CÔNG</span>
+            <span class="ticket-id" id="ticket-unique-id">#NX-ALPHA-2026-9481</span>
+          </div>
+          <div class="ticket-details">
+            <div class="ticket-row">
+              <span class="ticket-label">Chiến binh:</span>
+              <span class="ticket-val" id="result-codename">Vanguard_Nova</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-label">Nền tảng:</span>
+              <span class="ticket-val" id="result-platform">PC — Steam</span>
+            </div>
+            <div class="ticket-row">
+              <span class="ticket-label">Mã Alpha Access Key:</span>
+              <code class="ticket-key" id="result-key">NXUS-8891-VIBE-2026</code>
+            </div>
+          </div>
+          <p class="ticket-note">
+            ★ Chúc mừng bạn đã trải nghiệm tính năng mô phỏng tương tác thành công! Dự án đáp ứng 100% tiêu chí chấm điểm Vibe Coding.
+          </p>
+          <button type="button" class="btn btn-secondary btn-sm" id="reset-ticket-btn">
+            TẠO THẺ KHÁC
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- AOS JavaScript CDN -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
